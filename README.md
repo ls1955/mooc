@@ -1,4 +1,5 @@
-# massive open online course (mooc) own'solutions
+# mooc
 
 ## Description
-In this repository contained all of my solutions in the course
+------
+This repo contains all of my solutions for the course.
