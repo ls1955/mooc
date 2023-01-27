@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: B_HandTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.564 s <<< FAILURE! - in B_HandTest
+sortedPrintingWorks(B_HandTest)  Time elapsed: 1.016 s  <<< FAILURE!
+java.lang.AssertionError: 
+With code 
+Hand hand = new Hand();
+hand.add( new Card(12,Suit.HEART) ); 
+hand.add( new Card(14,Suit.DIAMOND) ); 
+hand.add( new Card(2,Suit.SPADE) ); 
+hand.add( new Card(2,Suit.CLUB) ); 
+hand.sort();
+hand.print()
+second card should be SPADE 2
+print was
+HEART Q
+DIAMOND A
+SPADE 2
+CLUB 2
+
+	at B_HandTest.sortedPrintingWorks(B_HandTest.java:217)
+

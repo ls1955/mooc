@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: C_ProductWarehouseWithHistoryTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.697 s <<< FAILURE! - in C_ProductWarehouseWithHistoryTest
+printAnalysisWorks1(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.64 s  <<< FAILURE!
+java.lang.AssertionError: 
+Is printAnalysis() working correctly? Running the code:
+tv = new ProductWarehouseWithHistory("coffee", 10, 2);
+pwh.addToWarehouse(4);
+pwh.takeFromWarehouse(2);
+pwh.printAnalysis()
+ prints the line "History: [2.0, 2.0, 2.0]"
+	at C_ProductWarehouseWithHistoryTest.printAnalysisWorks1(C_ProductWarehouseWithHistoryTest.java:274)
+
+printAnalysisWorks2(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+Is printAnalysis() working correctly? Running the code: 
+pwh = new ProductWarehouseWithHistory("coffee", 10, 2);
+pwh.addToWarehouse(4);
+pwh.takeFromWarehouse(2);
+pwh.printAnalysis()
+prints the line "History: [2.0, 2.0, 2.0, 2.0, 2.0]"
+	at C_ProductWarehouseWithHistoryTest.printAnalysisWorks2(C_ProductWarehouseWithHistoryTest.java:314)
+
+addingAndTakingAffectsTheHistory1(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Method history() of class ProductWarehouseWithHistory missing.
+	at C_ProductWarehouseWithHistoryTest.history(C_ProductWarehouseWithHistoryTest.java:347)
+	at C_ProductWarehouseWithHistoryTest.addingAndTakingAffectsTheHistory1(C_ProductWarehouseWithHistoryTest.java:151)
+
+addingAndTakingAffectsTheHistory2(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: Method history() of class ProductWarehouseWithHistory missing.
+	at C_ProductWarehouseWithHistoryTest.history(C_ProductWarehouseWithHistoryTest.java:347)
+	at C_ProductWarehouseWithHistoryTest.addingAndTakingAffectsTheHistory2(C_ProductWarehouseWithHistoryTest.java:178)
+
+hasMethodTakeFromWarehouse(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+ProductWarehouseWithHistory pwh = new ProductWarehouseWithHistory("beer", 10, 2);
+pwh.takeFromWarehouse(1);
+ expected:<1.0> but was:<2.0>
+	at C_ProductWarehouseWithHistoryTest.hasMethodTakeFromWarehouse(C_ProductWarehouseWithHistoryTest.java:118)
+
+hasMethodHistory(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: write a method public String history() for the class ProductWarehouseWithHistory
+	at C_ProductWarehouseWithHistoryTest.hasMethodHistory(C_ProductWarehouseWithHistoryTest.java:67)
+
+theInitialBalanceIsSetAsTheBalanceOfTheWarehouse(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Make sure you are setting the balance of the warehouse when calling the constructor of ProductWarehouseWithHistory. expected:<5.0> but was:<0.0>
+	at C_ProductWarehouseWithHistoryTest.theInitialBalanceIsSetAsTheBalanceOfTheWarehouse(C_ProductWarehouseWithHistoryTest.java:46)
+
+noExtraObjectVariables(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: you don't need object variables for the ProductWarehouseWithHistory class other object variables than ChangeHistory. Remove the extra ones
+	at C_ProductWarehouseWithHistoryTest.sanitaryCheck(C_ProductWarehouseWithHistoryTest.java:393)
+	at C_ProductWarehouseWithHistoryTest.noExtraObjectVariables(C_ProductWarehouseWithHistoryTest.java:53)
+
+addingAndTakingWorks(C_ProductWarehouseWithHistoryTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+does the addToWarehouse method in ProductWarehouseWithHistory call the overridden method?
+check the code:
+check the code:
+pwh = new ProductWarehouseWithHistory("coffee",10,5);
+pwh.addToWarehouse(5);
+pwh.getBalance()  expected:<10.0> but was:<5.0>
+	at C_ProductWarehouseWithHistoryTest.addingAndTakingWorks(C_ProductWarehouseWithHistoryTest.java:130)
+

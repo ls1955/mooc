@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: D_HandTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in D_HandTest
+sortedBySuitPrintWorks(D_HandTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Method sortBySuit() of class Hand missing.
+	at D_HandTest.sortedBySuitPrintWorks(D_HandTest.java:81)
+
+methodSortBySuit(D_HandTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: in classHand, add a method public void sortBySuit()
+	at D_HandTest.methodSortBySuit(D_HandTest.java:39)
+
